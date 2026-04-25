@@ -19,11 +19,11 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               }`}
             >
               <h2 className="mb-3 font-sans text-3xl font-light leading-[1.1] tracking-tight text-foreground md:mb-4 md:text-6xl lg:text-7xl">
-                Создаем
+                Ваш личный
                 <br />
-                будущее
+                навигатор
                 <br />
-                <span className="text-foreground/40">цифровых</span>
+                <span className="text-foreground/40">в мире туров</span>
               </h2>
             </div>
 
@@ -34,10 +34,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
               style={{ transitionDelay: "200ms" }}
             >
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Мы команда дизайнеров, разработчиков и технологов, которые создают исключительные цифровые продукты.
+                TourMatch — умный сервис, который берёт на себя всю рутину поиска. Вы описываете мечту, мы находим лучший вариант.
               </p>
               <p className="max-w-md text-sm leading-relaxed text-foreground/90 md:text-lg">
-                Каждый проект — это возможность исследовать новые решения и раздвигать границы возможного.
+                Сотрудничаем с ведущими туроператорами России и мира, чтобы вы всегда получали честную цену.
               </p>
             </div>
           </div>
@@ -45,9 +45,9 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           {/* Right side - Stats with creative layout */}
           <div className="flex flex-col justify-center space-y-6 md:space-y-12">
             {[
-              { value: "150+", label: "Проектов", sublabel: "Реализовано по всему миру", direction: "right" },
-              { value: "8", label: "Лет", sublabel: "Опыта и инноваций", direction: "left" },
-              { value: "12", label: "Наград", sublabel: "Отраслевое признание", direction: "right" },
+              { value: "50 000+", label: "Туров", sublabel: "В базе от проверенных операторов", direction: "right" },
+              { value: "2 мин", label: "Подбор", sublabel: "Среднее время до первых результатов", direction: "left" },
+              { value: "98%", label: "Довольны", sublabel: "Клиентов возвращаются снова", direction: "right" },
             ].map((stat, i) => {
               const getRevealClass = () => {
                 if (!isVisible) {
@@ -84,10 +84,10 @@ export function AboutSection({ scrollToSection }: { scrollToSection?: (index: nu
           style={{ transitionDelay: "750ms" }}
         >
           <MagneticButton size="lg" variant="primary" onClick={() => scrollToSection?.(4)}>
-            Начать проект
+            Подобрать тур
           </MagneticButton>
           <MagneticButton size="lg" variant="secondary" onClick={() => scrollToSection?.(1)}>
-            Смотреть работы
+            Смотреть кейсы
           </MagneticButton>
         </div>
       </div>
